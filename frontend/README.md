@@ -19,7 +19,7 @@ Users can browse Pokémon and search Pokémon data.
 ## Installation
 
 ### 1. Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/farahmohdnazir/Pokemon-App
 cd PokeDex_App
 
 ### 2. Install dependencies
