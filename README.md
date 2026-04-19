@@ -18,24 +18,54 @@ Users can browse Pokémon and search Pokémon data.
 
 ### 1. Clone the repository
 git clone https://github.com/farahmohdnazir/Pokemon-App
-cd PokeDex_App
 
-### 2. Install dependencies
-npm install
-
-### 3. Run backend server
+### 2. Run backend server
 cd backend
 npm install
 npm run dev
 
-### 4. Run frontend (Next.js)
+### 3. Run frontend setup
 cd frontend
 npm install
 npm run dev
 
-## API Endpoints
-- GET /api/pokemons → Get all Pokémon
-- GET /api/pokemons?page=1&limit=10 → Pagination
+## API Documentation
+
+### Base URL
+http://localhost:5000/api
+
+---
+
+### Get All Pokémon
+GET /api/pokemons
+
+#### Description:
+Retrieve a list of all Pokémon.
+
+#### Response:
+```json
+[
+  {
+    "name": "Bulbasaur",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "height": 7,
+    "weight": 56
+  }
+]
+
+**### Get Pokémon with Pagination**
+GET /api/pokemons?page=1&limit=10
+
+#### Description
+Retrieve Pokémon with pagination.
+
+#### Query Parameters:
+page (number): Page number
+limit (number): Number of items per page
 
 ## Folder Structure
 /frontend
