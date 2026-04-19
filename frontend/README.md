@@ -56,6 +56,7 @@ Retrieve a list of all Pokémon.
     "weight": 56
   }
 ]
+```
 
 ### Get Pokémon with Pagination
 GET /api/pokemons?page=1&limit=10
