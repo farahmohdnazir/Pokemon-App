@@ -66,7 +66,7 @@ const PokemonList = () => {
                 <button className='clear-button' onClick={handleClearSearch}>Clear</button>
             </div>
 
-            {loading ? <p style={{ textAlign: "center" }}>Loading.....</p> : (
+            {loading && pokemonList.length === 0 ? <p style={{ textAlign: "center" }}>Loading.....</p> : (
                 <div className='pokemon-list'>
                     <Row>
                         {searchedPokemon.map((pokemon, index) => (
