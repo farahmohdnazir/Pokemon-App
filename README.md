@@ -57,7 +57,7 @@ Retrieve a list of all Pokémon.
   }
 ]
 
-**### Get Pokémon with Pagination**
+### Get Pokémon with Pagination
 GET /api/pokemons?page=1&limit=10
 
 #### Description
